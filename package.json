@@ -1,0 +1,39 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "webpack": "webpack --mode development --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
+    "babel-loader": "^9.1.3",
+    "dom": "^0.0.3",
+    "nodemon": "^3.0.1",
+    "react": "^18.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NarvaezSKY/py-mern.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NarvaezSKY/py-mern/issues"
+  },
+  "homepage": "https://github.com/NarvaezSKY/py-mern#readme",
+  "description": ""
+}
