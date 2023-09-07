@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 
 class App extends Component {
     constructor(){
-        super()
-        this.state={
+        super();
+        this.state = {
             title:'',
             description:'',
-            tasks:[],
+            tasks: [],
             _id:''
         }
         this.handleChange=this.handleChange.bind(this)
@@ -46,12 +46,12 @@ class App extends Component {
                 this.setState({title:'', description:''})
                 this.fetchTasks()
             })
-            .catch(err=>console.log(err))
+            .catch(err=>console.error(err))
             console.log(this.state)
         }
         e.preventDefault()
     }
-    componentDidMount(){
+componentDidMount(){
         this.fetchTasks()
     }
     fetchTasks(){
