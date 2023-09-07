@@ -34,7 +34,7 @@ router.put('/:id', async(req,res)=>{
 })
 
 router.delete('/:id', async(req,res)=>{
-    await Task.findByIdAndDelete(req.params.id, newTask)
+    await Task.findByIdAndDelete(req.params.id)
     res.json({status:'tarea eliminada pa'})
 })
 
