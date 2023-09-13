@@ -81,19 +81,23 @@ componentDidMount(){
       }
     }
 
-    editTask(id){
+    editTask(id) {
         fetch(`/api/task/${id}`)
-            .then(res=>res.json())
-            .then(data=>{
-                console.log(data)
-                this.setState({
-                    title:data.title,
-                    description: data.description,
-                    _id:data._id
-                })
-        })
-        
-    }
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            const { title, description, _id } = data.task; 
+            this.setState({
+              title,
+              description,
+              _id,
+            });
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      }
+      
 
     handleChange(e){
         const{name,value}=e.target
